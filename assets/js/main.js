@@ -10,5 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateLinks('android', DOWNLOAD_URLS.android);
         updateLinks('ios', DOWNLOAD_URLS.ios);
         updateLinks('macos', DOWNLOAD_URLS.macos);
+        // Universal download link
+        updateLinks('download', DOWNLOAD_URLS.android);
     }
 });
