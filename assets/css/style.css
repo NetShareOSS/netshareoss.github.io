@@ -244,20 +244,57 @@ header {
 
 /* Use Cases */
 .use-cases-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+	    list-style: none;
+	    display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	    gap: 1.5rem;
+	    margin-top: 3rem;
 }
 
-.use-case-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.02);
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    border-left: 3px solid var(--accent);
+.use-case-card {
+	    background: var(--card-bg);
+	    border: 1px solid var(--card-border);
+	    padding: 1.75rem;
+	    border-radius: 1.5rem;
+	    text-align: left;
+	    transition: transform 0.3s, border-color 0.3s;
+}
+
+.use-case-card:hover {
+	    transform: translateY(-4px);
+	    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.use-case-header {
+	    display: flex;
+	    align-items: center;
+	    gap: 0.75rem;
+	    margin-bottom: 0.75rem;
+}
+
+.use-case-icon {
+	    font-size: 1.75rem;
+	    line-height: 1;
+}
+
+.use-case-card h3 {
+	    margin: 0;
+	    font-size: 1.2rem;
+}
+
+.use-case-card p {
+	    margin: 0 0 0.75rem;
+	    color: var(--text-secondary);
+}
+
+.use-case-card ul {
+	    margin: 0;
+	    padding-left: 1.2rem;
+	    color: var(--text-secondary);
+}
+
+.use-case-card li {
+	    margin: 0.35rem 0;
 }
 
 /* Architecture */
