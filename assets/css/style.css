@@ -216,6 +216,16 @@ header {
 }
 
 /* Features/Value Proposition */
+.feature-intro {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feature-intro p {
+    margin: 0 auto;
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
