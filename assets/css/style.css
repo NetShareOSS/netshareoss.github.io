@@ -412,6 +412,20 @@ footer {
     margin-bottom: 2rem;
 }
 
+.policy-note {
+    padding: 0.85rem 1rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 0.5rem;
+    background: rgba(99, 102, 241, 0.08);
+    color: #c7d2fe;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.policy-note strong {
+    color: var(--text-primary);
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     h1 {
