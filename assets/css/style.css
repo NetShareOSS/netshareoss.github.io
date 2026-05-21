@@ -211,6 +211,28 @@ header {
     opacity: 0.9;
 }
 
+.indiehunt-badge {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem 0;
+}
+
+.indiehunt-badge a {
+    display: inline-flex;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.indiehunt-badge a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.indiehunt-badge img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .macos-btn {
     white-space: nowrap;
 }
