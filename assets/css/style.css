@@ -242,21 +242,20 @@ header {
 }
 
 .featured-badges {
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .featured-badges-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    align-items: stretch;
+    gap: 0.9rem;
+    width: min(100%, 860px);
     max-width: 100%;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.03);
@@ -264,19 +263,28 @@ header {
 }
 
 .featured-badges-grid a {
-    display: inline-flex;
-    transition: transform 0.2s, opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 78px;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.2s, opacity 0.2s, border-color 0.2s, background 0.2s;
 }
 
 .featured-badges-grid a:hover {
     transform: translateY(-2px);
-    opacity: 0.9;
+    opacity: 0.95;
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .featured-badges-grid img {
     display: block;
     width: auto;
-    max-width: min(265px, 100%);
+    max-width: 100%;
     height: auto;
 }
 
@@ -579,8 +587,11 @@ footer {
     }
 
     .featured-badges-grid {
-        flex-direction: column;
         gap: 1rem;
         padding: 1.25rem 1rem;
+    }
+
+    .featured-badges-grid a {
+        justify-content: center;
     }
 }
