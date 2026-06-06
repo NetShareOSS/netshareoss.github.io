@@ -180,6 +180,29 @@ header {
     margin: 0 auto;
 }
 
+.hero-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.hero-title-row h1 {
+    margin: 0;
+    min-width: 0;
+}
+
+.hero-app-icon {
+    width: clamp(64px, 8vw, 88px);
+    height: clamp(64px, 8vw, 88px);
+    border-radius: 22%;
+    flex-shrink: 0;
+    object-fit: cover;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
 .hero-eyebrow {
     display: inline-flex;
     align-items: center;
@@ -700,6 +723,15 @@ footer {
         min-height: auto;
         align-items: flex-start;
         padding: calc(var(--header-height) + 2rem) 0 3rem;
+    }
+
+    .hero-title-row {
+        gap: 0.75rem;
+    }
+
+    .hero-app-icon {
+        width: 56px;
+        height: 56px;
     }
 
     .featured-badges {
