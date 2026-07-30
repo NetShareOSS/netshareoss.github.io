@@ -1,0 +1,290 @@
+# Netshare - Full Documentation
+
+> This is the expanded llms.txt for Netshare, containing full content from all site pages for AI/LLM consumption with larger context windows.
+
+---
+
+## Home Page
+
+---
+title: "Netshare - Fast, Private, Local File Sharing"
+description: "Netshare is a free, open-source app to securely share files between two computers or between a computer and mobile device over the same Wi-Fi, without relying on the internet."
+url: "https://netfshare.site"
+---
+
+# Netshare
+
+> Fast, private file sharing on your local network.
+
+Netshare lets you instantly share files between devices on the same network — no cloud, no account, no internet required.
+
+## See how NetShare works
+
+Watch the short demo to see how to move files between devices on the same network without cloud links, shared-folder setup, or internet dependency.
+
+Demo video: https://www.youtube.com/watch?v=KIReSrqF8FI
+
+## Share files on the same network, without relying on the Internet
+
+Netshare is a free, open-source app for secure local network file sharing. It helps you transfer files between devices on the same network, share files between two computers, or between a computer and a mobile device.
+
+### Local-first & blazing fast
+
+Files move directly between devices on your local network, making Netshare a fast option for transferring files between computers, mobile-computer, and mobile-mobile on the same network.
+
+### Privacy by design
+
+Your data stays on your network. No uploads, no tracking, and no external servers involved when you securely share files over your local network.
+
+### Works without internet
+
+Share files without relying on the internet. Netshare works in offline or restricted environments such as offices, labs, factories, and internal networks.
+
+### Cross-platform
+
+Share files between two computers or between a computer and a mobile device across Android, iOS, and macOS on the same network.
+
+## Large file transfers in action
+
+See NetShare move large files between an Android phone and a macOS desktop over the local network, with no cloud upload in between.
+
+Large file transfer demo: https://www.youtube.com/watch?v=yhZNjhfu0R4
+
+## Built for real-world environments
+
+Designed for LAN-first sharing in secure, offline, and policy-restricted networks.
+
+### Internal enterprise
+
+Share files within the company when cloud tools are restricted or blocked.
+
+- No Google Drive or external links required
+- Perfect for HR docs, source code, and design files
+
+### Factories & industrial sites
+
+Built for isolated networks where devices may have no Internet access.
+
+- Works on internal networks
+- Reliable transfers in offline environments
+
+### Schools, labs & hospitals
+
+Keep sensitive data on-premises while still enabling fast collaboration.
+
+- Designed for LAN-only setups
+- Supports privacy-first workflows
+
+### Dev teams & studios
+
+Move large builds and assets quickly between machines on the same LAN.
+
+- Share builds, exports, and media assets
+- Avoid cloud upload time and bandwidth costs
+
+## Technology
+
+Built with Flutter for a consistent cross-platform app. Flutter helped the team move quickly across platforms while keeping the UI consistent. It was chosen to enable fast development without maintaining separate native apps.
+
+More: https://netfshare.site/technology/
+
+## Downloads
+
+- Android: https://play.google.com/store/apps/details?id=com.app.netshare
+- iOS: https://apps.apple.com/vn/app/id6758239332
+- macOS: https://apps.apple.com/vn/app/id6758239332
+
+## Community & support
+
+- GitHub: https://github.com/NetShareOSS/netshare
+- Discord: https://discord.gg/bDuY7qrJE
+- X: https://x.com/NetShareOSS
+- YouTube: https://www.youtube.com/@NetShareOSS
+- Support: https://netfshare.site/support/
+- Buy me a coffee: https://buymeacoffee.com/huynguyennovem
+
+*This is a markdown version of [https://netfshare.site](https://netfshare.site) for AI/LLM consumption.*
+
+---
+
+## Technology Page
+
+---
+title: "Technology - Netshare"
+description: "Learn about the technology choices behind Netshare, starting with Flutter for cross-platform development."
+url: "https://netfshare.site/technology/"
+---
+
+# Technology
+
+> Current stack notes for Netshare.
+
+## Flutter
+
+Status: In use
+
+[Flutter](https://flutter.dev/) helped the team move quickly across platforms while keeping the UI consistent. It was chosen to enable fast development without maintaining separate native apps.
+
+*This is a markdown version of [https://netfshare.site/technology/](https://netfshare.site/technology/) for AI/LLM consumption.*
+
+---
+
+## Support Page
+
+---
+title: "Support - Netshare"
+description: "Get support for Netshare."
+url: "https://netfshare.site/support/"
+---
+
+# Support
+
+> How can we help? We are here to help you get the most out of Netshare.
+
+## Report a Bug
+
+Found something that's not working? Let us know on GitHub.
+
+- Open an issue: https://github.com/NetShareOSS/netshare/issues
+
+## Contact Us
+
+For general inquiries or privacy questions.
+
+- Email: netshare.oss@gmail.com
+
+## Community
+
+Join the Discord community. Connect with other Netshare users, ask quick questions, and get updates from the project.
+
+- Discord: https://discord.gg/bDuY7qrJE
+
+*This is a markdown version of [https://netfshare.site/support/](https://netfshare.site/support/) for AI/LLM consumption.*
+
+---
+
+## Privacy Policy
+
+---
+title: "Privacy Policy - Netshare"
+description: "Privacy Policy for Netshare application."
+url: "https://netfshare.site/privacy/"
+---
+
+# Privacy Policy
+
+**Last updated:** May 18, 2026
+
+Netshare respects your privacy and is designed with privacy as a core principle.
+
+## 1. Data Collection
+
+Netshare does not collect, store, or transmit the files you share to any external servers.
+
+The application operates primarily within your local network and does not require user accounts or cloud services.
+
+## 2. File Transfers
+
+All file transfers occur directly between devices on the same network.
+
+Transferred data is not routed through third-party servers operated by Netshare.
+
+## 3. Firebase Analytics, Crashlytics, and Google Ads
+
+Netshare uses Firebase Analytics and Firebase Crashlytics to understand app usage, monitor stability, and diagnose failures. Depending on how the app is used and configured, these services may process information such as app-instance identifiers, session and usage statistics, approximate geolocation, device and app information, stack traces, relevant app state, and device metadata associated with crashes or errors. Netshare uses this information only to monitor performance, investigate bugs and crashes, and improve app quality. It is used only for app analytics, diagnostics, and stability improvement.
+
+Netshare may also use Google Ads services to display and measure ads in the app. Depending on configuration, these services may process data such as device and app information, identifiers, approximate location, ad-interaction data, and performance information to support ad delivery, fraud prevention, and measurement. Where required, ad-related processing is subject to applicable user consent and platform privacy settings.
+
+**Note:** Firebase, Crashlytics, and Google Ads are integrated only in official app-store builds, not in the open-source project source code.
+
+## 4. Internet Access
+
+Internet access is not required for core local file-transfer functionality.
+
+If optional online features are introduced in the future, they will be clearly disclosed and governed by updated policies.
+
+## 5. Security
+
+We take reasonable measures to ensure secure communication between devices within the local network.
+
+However, users are responsible for ensuring the security of their own network environments.
+
+## 6. Changes to This Policy
+
+This Privacy Policy may be updated from time to time.
+
+Any changes will be published on this page with an updated revision date.
+
+## 7. Terms of Use (EULA)
+
+NetShare uses Apple's Standard End User License Agreement for apps distributed through the App Store. By downloading or using NetShare from the App Store, your use of the app is also governed by Apple's standard licensed application terms, unless NetShare provides a separate written agreement that applies to your use.
+
+You can review the Apple Standard EULA at https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+## 8. Contact
+
+If you have any questions about this Privacy Policy, please contact us at: netshare.oss@gmail.com
+
+*This is a markdown version of [https://netfshare.site/privacy/](https://netfshare.site/privacy/) for AI/LLM consumption.*
+
+---
+
+## Terms of Use
+
+---
+title: "Terms of Use - Netshare"
+description: "Terms of Use for Netshare application."
+url: "https://netfshare.site/terms/"
+---
+
+# Terms of Use
+
+**Last updated:** January 22, 2026
+
+By using Netshare, you agree to the following terms and conditions.
+
+## 1. Use of the Application
+
+Netshare is provided to enable file sharing between devices on the same local network.
+
+You agree to use the application only for lawful purposes and in compliance with applicable laws and regulations.
+
+## 2. No Warranty
+
+Netshare is provided "as is" and "as available", without warranties of any kind, express or implied.
+
+We do not guarantee uninterrupted or error-free operation.
+
+## 3. User Responsibility
+
+You are responsible for:
+
+- The data you share
+- The devices and networks you use
+- Ensuring appropriate access control within your environment
+
+## 4. Limitation of Liability
+
+To the maximum extent permitted by law, Netshare shall not be liable for any damages arising from the use or inability to use the application.
+
+## 5. Optional Features & Services
+
+Certain features may be introduced in the future, including optional paid or self-hosted services.
+
+Such features may be subject to additional terms, which will be provided separately if applicable.
+
+## 6. Intellectual Property
+
+The Netshare name, logo, and associated branding are the property of the Netshare project.
+
+## 7. Changes to These Terms
+
+These Terms of Use may be updated from time to time.
+
+Continued use of the application constitutes acceptance of the updated terms.
+
+## 8. Contact
+
+For questions regarding these Terms, please contact: netshare.oss@gmail.com
+
+*This is a markdown version of [https://netfshare.site/terms/](https://netfshare.site/terms/) for AI/LLM consumption.*

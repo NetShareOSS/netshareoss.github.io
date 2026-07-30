@@ -1,0 +1,50 @@
+# Robots.txt for netfshare.site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://netfshare.site/sitemap.xml
+
+# AI/LLM friendly content
+# See https://llmstxt.org for the llms.txt specification
+# llms.txt provides curated content for AI assistants and LLMs
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Content Signals — declare AI content usage preferences
+# See https://contentsignals.org/
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+# AI-friendly content locations
+# - /llms.txt - Curated overview for AI/LLMs (markdown)
+# - /llms-full.txt - Full expanded content for larger context windows
+# - /**/index.md and /index.md - Markdown versions of site pages
