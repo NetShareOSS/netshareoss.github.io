@@ -9,10 +9,8 @@
         content="Learn about the technology choices behind Netshare, starting with Flutter for cross-platform development.">
     <link rel="canonical" href="https://netfshare.site/technology/">
     <link rel="icon" type="image/x-icon" href="/assets/images/appicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -39,7 +37,10 @@
                 <div class="technology-stack-list">
                     <article class="technology-item">
                         <div class="technology-item-icon" aria-hidden="true">
-                            <img src="../assets/images/icon_flutter.png" alt="">
+                            <picture>
+                                <source srcset="../assets/images/icon_flutter.webp" type="image/webp">
+                                <img src="../assets/images/icon_flutter.png" alt="" width="42" height="42" loading="lazy" decoding="async">
+                            </picture>
                         </div>
                         <div class="technology-item-copy">
                             <div class="technology-item-header">
@@ -65,8 +66,7 @@
         </div>
     </footer>
 
-    <script src="../assets/js/constants.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js" defer></script>
 </body>
 
 </html>

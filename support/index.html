@@ -7,10 +7,8 @@
     <title>Support - Netshare</title>
     <meta name="description" content="Get support for Netshare.">
     <link rel="icon" type="image/x-icon" href="/assets/images/appicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -55,7 +53,10 @@
                 </p>
                 <a href="https://discord.gg/bDuY7qrJE" class="discord-button" target="_blank" rel="noopener"
                     aria-label="Join the Discord community">
-                    <img src="../assets/images/Discord.png" alt="" aria-hidden="true">
+                    <picture>
+                        <source srcset="../assets/images/Discord.webp" type="image/webp">
+                        <img src="../assets/images/Discord.png" alt="" aria-hidden="true" width="64" height="64" loading="lazy" decoding="async">
+                    </picture>
                     <span>Join Discord</span>
                 </a>
             </section>
@@ -70,8 +71,7 @@
         </div>
     </footer>
 
-    <script src="../assets/js/constants.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js" defer></script>
 </body>
 
 </html>

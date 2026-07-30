@@ -11,44 +11,15 @@
     <link rel="alternate" type="text/plain" title="LLM context" href="https://netfshare.site/llms.txt">
     <link rel="alternate" type="text/plain" title="LLM full context" href="https://netfshare.site/llms-full.txt">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/appicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
-        rel="stylesheet">
-
+    <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/images/app-icon.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E6TFE4BQV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-2E6TFE4BQV');
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KMLT6MF7');</script>
-    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMLT6MF7" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="container nav-container">
             <a href="/" class="logo">Netshare</a>
@@ -67,7 +38,11 @@
         <section class="hero">
             <div class="container hero-content">
                 <div class="hero-title-row">
-                    <img src="assets/images/app-icon.jpg" alt="Netshare app icon" class="hero-app-icon">
+                    <picture>
+                        <source srcset="assets/images/app-icon.webp" type="image/webp">
+                        <img src="assets/images/app-icon.jpg" alt="Netshare app icon" class="hero-app-icon"
+                            width="88" height="88" decoding="async" fetchpriority="high">
+                    </picture>
                     <h1>Fast, private file sharing on your local network.</h1>
                 </div>
                 <p class="hero-subtitle">
@@ -75,14 +50,26 @@
                     no cloud, no account, no internet required.
                 </p>
                 <div class="hero-actions">
-                    <a href="#" class="store-badge link-android" target="_blank">
-                        <img src="assets/images/GooglePlay_Badge.png" alt="Get it on Google Play">
+                    <a href="#" class="store-badge link-android" target="_blank" rel="noopener">
+                        <picture>
+                            <source srcset="assets/images/GooglePlay_Badge.webp" type="image/webp">
+                            <img src="assets/images/GooglePlay_Badge.png" alt="Get it on Google Play"
+                                width="203" height="60" decoding="async">
+                        </picture>
                     </a>
-                    <a href="#" class="store-badge link-ios" target="_blank">
-                        <img src="assets/images/App_Store_Badge.png" alt="Download on the App Store">
+                    <a href="#" class="store-badge link-ios" target="_blank" rel="noopener">
+                        <picture>
+                            <source srcset="assets/images/App_Store_Badge.webp" type="image/webp">
+                            <img src="assets/images/App_Store_Badge.png" alt="Download on the App Store"
+                                width="180" height="60" decoding="async">
+                        </picture>
                     </a>
-                    <a href="#" class="store-badge link-macos" target="_blank">
-                        <img src="assets/images/Mac_App_Store_Badge.png" alt="Download on Mac App Store">
+                    <a href="#" class="store-badge link-macos" target="_blank" rel="noopener">
+                        <picture>
+                            <source srcset="assets/images/Mac_App_Store_Badge.webp" type="image/webp">
+                            <img src="assets/images/Mac_App_Store_Badge.png" alt="Download on Mac App Store"
+                                width="235" height="60" decoding="async">
+                        </picture>
                     </a>
                 </div>
                 <div class="featured-badges" aria-label="Launch badges">
@@ -90,18 +77,19 @@
                         <a href="https://www.producthunt.com/products/netshare-share-file-in-local?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-netshare-share-file-in-local"
                             target="_blank" rel="noopener noreferrer">
                             <img alt="NetShare-share file in local - Private and no internet needed | Product Hunt"
-                                width="250" height="54"
-                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1157930&amp;theme=dark&amp;t=1780116853371">
+                                width="250" height="54" loading="lazy" decoding="async"
+                                src="assets/images/badge-producthunt.svg">
                         </a>
                         <a href="https://indiehunt.io/project/netshare-fast-private-local-file-sharing" target="_blank"
                             rel="noopener">
-                            <img src="https://indiehunt.io/badges/indiehunt-badge-dark.svg" alt="Featured on IndieHunt"
-                                width="265" height="58">
+                            <img src="assets/images/badge-indiehunt.svg" alt="Featured on IndieHunt"
+                                width="265" height="58" loading="lazy" decoding="async">
                         </a>
                         <a href="https://www.shipit.buzz/products/netshare?ref=badge" target="_blank"
                             rel="noopener noreferrer">
                             <img src="https://www.shipit.buzz/api/products/netshare/badge?theme=dark"
-                                alt="Featured on Shipit">
+                                alt="Featured on Shipit" width="250" height="54" loading="lazy" decoding="async"
+                                referrerpolicy="no-referrer">
                         </a>
                     </div>
                 </div>
@@ -117,11 +105,13 @@
                 </div>
                 <div class="demo-video-shell">
                     <div class="demo-video-frame">
-                        <iframe src="https://www.youtube-nocookie.com/embed/KIReSrqF8FI"
-                            title="Netshare demo video" loading="lazy"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <button type="button" class="lite-youtube"
+                            data-youtube-id="KIReSrqF8FI"
+                            data-youtube-title="Netshare demo video"
+                            aria-label="Play Netshare demo video"
+                            style="background-image:url('assets/images/yt-thumb-demo.webp')">
+                            <span class="lite-youtube-play" aria-hidden="true"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -174,11 +164,13 @@
                 </div>
                 <div class="demo-video-shell">
                     <div class="demo-video-frame">
-                        <iframe src="https://www.youtube-nocookie.com/embed/yhZNjhfu0R4"
-                            title="NetShare 2.4.0: fast large files transfer between Android phone and macOS desktop in local network"
-                            loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <button type="button" class="lite-youtube"
+                            data-youtube-id="yhZNjhfu0R4"
+                            data-youtube-title="NetShare 2.4.0: fast large files transfer between Android phone and macOS desktop in local network"
+                            aria-label="Play large file transfer demo"
+                            style="background-image:url('assets/images/yt-thumb-large.webp')">
+                            <span class="lite-youtube-play" aria-hidden="true"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -253,7 +245,11 @@
                         <a href="technology/" class="btn btn-secondary">Read about the technology</a>
                     </div>
                     <div class="technology-highlight-visual" aria-hidden="true">
-                        <img src="assets/images/icon_flutter.png" alt="">
+                        <picture>
+                            <source srcset="assets/images/icon_flutter.webp" type="image/webp">
+                            <img src="assets/images/icon_flutter.png" alt="" width="148" height="148"
+                                loading="lazy" decoding="async">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -277,7 +273,11 @@
                     <h4>Community</h4>
                     <a href="https://discord.gg/bDuY7qrJE" class="discord-icon-link" target="_blank" rel="noopener"
                         aria-label="Join the Netshare Discord community">
-                        <img src="assets/images/Discord.png" alt="" aria-hidden="true">
+                        <picture>
+                            <source srcset="assets/images/Discord.webp" type="image/webp">
+                            <img src="assets/images/Discord.png" alt="" aria-hidden="true" width="32" height="32"
+                                loading="lazy" decoding="async">
+                        </picture>
                     </a>
                 </div>
                 <div class="footer-links">
@@ -338,8 +338,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/constants.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
