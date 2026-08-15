@@ -18,16 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('[data-youtube-id]').forEach((el) => {
         const loadPlayer = () => {
+            if (el.dataset.loaded === '1') return;
+            el.dataset.loaded = '1';
+
             const id = el.getAttribute('data-youtube-id');
             const title = el.getAttribute('data-youtube-title') || 'YouTube video';
-            el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1"
-                title="${title}"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&playsinline=1`;
+            iframe.title = title;
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            iframe.allowFullscreen = true;
+            iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+            el.replaceWith(iframe);
         };
 
-        el.addEventListener('click', loadPlayer, { once: true });
+        el.addEventListener('click', loadPlayer);
         el.addEventListener('keydown', (event) => {
             if (event.key === 'Enter' || event.key === ' ') {
                 event.preventDefault();
