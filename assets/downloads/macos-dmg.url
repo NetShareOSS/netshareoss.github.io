@@ -1,0 +1,5 @@
+# Paste your Cloudflare R2 public URL below (one line).
+# Either the full DMG URL or the bucket base URL works:
+#   https://pub-xxxx.r2.dev/NetShare.dmg
+#   https://pub-xxxx.r2.dev/
+https://pub-ad1e92eb70504106ab4499df6678ab68.r2.dev/releases/macos/NetShare.dmg

@@ -17,6 +17,7 @@ Key facts:
 ## Product
 
 - [Home](https://netfshare.site/index.md): Product overview, features, use cases, and download entry points
+- [Download for macOS](https://netfshare.site/download-macos/index.md): Direct DMG download and Mac App Store
 - [Technology](https://netfshare.site/technology/index.md): Stack notes, including Flutter for cross-platform development
 
 ---
@@ -45,7 +46,7 @@ Netshare is designed for secure local network file sharing:
 
 - [Google Play (Android)](https://play.google.com/store/apps/details?id=com.app.netshare): Install Netshare for Android
 - [App Store (iOS)](https://apps.apple.com/vn/app/id6758239332): Install Netshare for iPhone and iPad
-- [Mac App Store (macOS)](https://apps.apple.com/vn/app/id6758239332): Install Netshare for Mac
+- [Download for macOS](https://netfshare.site/download-macos/): Direct DMG download and Mac App Store
 
 ---
 

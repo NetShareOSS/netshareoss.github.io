@@ -84,7 +84,7 @@ Built with Flutter for a consistent cross-platform app. Flutter helped the team 
 
 - [Google Play (Android)](https://play.google.com/store/apps/details?id=com.app.netshare)
 - [App Store (iOS)](https://apps.apple.com/vn/app/id6758239332)
-- [Mac App Store (macOS)](https://apps.apple.com/vn/app/id6758239332)
+- [Download for macOS](https://netfshare.site/download-macos/)
 
 ## Community
 

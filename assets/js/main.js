@@ -4,6 +4,19 @@ const DOWNLOAD_URLS = {
     macos: "https://apps.apple.com/vn/app/id6758239332"
 };
 
+const MACOS_DMG_URL_FILE = '/assets/downloads/macos-dmg.url';
+
+const resolveMacosDmgUrl = (raw) => {
+    const line = String(raw || '')
+        .split(/\r?\n/)
+        .map((entry) => entry.trim())
+        .find((entry) => entry && !entry.startsWith('#'));
+
+    if (!line) return '';
+    if (/\.dmg(\?|#|$)/i.test(line)) return line;
+    return `${line.replace(/\/?$/, '/')}NetShare.dmg`;
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const updateLinks = (platform, url) => {
         document.querySelectorAll(`.link-${platform}`).forEach((el) => {
@@ -15,6 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLinks('ios', DOWNLOAD_URLS.ios);
     updateLinks('macos', DOWNLOAD_URLS.macos);
     updateLinks('download', DOWNLOAD_URLS.android);
+
+    fetch(MACOS_DMG_URL_FILE, { cache: 'no-cache' })
+        .then((response) => (response.ok ? response.text() : Promise.reject(response.status)))
+        .then((text) => {
+            const dmgUrl = resolveMacosDmgUrl(text);
+            if (dmgUrl) updateLinks('macos-dmg', dmgUrl);
+        })
+        .catch(() => {});
 
     document.querySelectorAll('[data-youtube-id]').forEach((el) => {
         const loadPlayer = () => {

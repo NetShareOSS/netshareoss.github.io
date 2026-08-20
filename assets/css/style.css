@@ -366,6 +366,21 @@ header {
     white-space: nowrap;
 }
 
+.install-steps {
+    margin: 1rem 0 1.25rem;
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+    text-align: left;
+}
+
+.install-steps li {
+    margin-bottom: 0.5rem;
+}
+
+.install-steps li:last-child {
+    margin-bottom: 0;
+}
+
 /* Features/Value Proposition */
 .feature-intro {
     max-width: 820px;

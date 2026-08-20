@@ -92,7 +92,7 @@ More: https://netfshare.site/technology/
 
 - Android: https://play.google.com/store/apps/details?id=com.app.netshare
 - iOS: https://apps.apple.com/vn/app/id6758239332
-- macOS: https://apps.apple.com/vn/app/id6758239332
+- macOS: https://netfshare.site/download-macos/
 
 ## Community & support
 
@@ -126,6 +126,35 @@ Status: In use
 [Flutter](https://flutter.dev/) helped the team move quickly across platforms while keeping the UI consistent. It was chosen to enable fast development without maintaining separate native apps.
 
 *This is a markdown version of [https://netfshare.site/technology/](https://netfshare.site/technology/) for AI/LLM consumption.*
+
+---
+
+## Download for macOS
+
+---
+title: "Download for macOS - Netshare"
+description: "Download Netshare for macOS as a notarized DMG, or get it from the Mac App Store."
+url: "https://netfshare.site/download-macos/"
+---
+
+# Download Netshare for Mac
+
+Get the notarized DMG for direct install, or install from the Mac App Store.
+
+## Download
+
+- DMG URL file: https://netfshare.site/assets/downloads/macos-dmg.url
+- Mac App Store: https://apps.apple.com/vn/app/id6758239332
+
+## How to install from the DMG
+
+1. Open the downloaded NetShare.dmg file.
+2. Drag NetShare into the Applications folder.
+3. Open NetShare from Applications (or Launchpad).
+
+The DMG is Developer ID signed and notarized by Apple, so Gatekeeper should accept it without extra steps.
+
+*This is a markdown version of [https://netfshare.site/download-macos/](https://netfshare.site/download-macos/) for AI/LLM consumption.*
 
 ---
 

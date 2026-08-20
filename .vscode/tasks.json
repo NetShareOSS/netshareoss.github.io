@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "serve:5500",
+      "type": "shell",
+      "command": "python3 -m http.server 5500",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "http-server",
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".",
+          "endsPattern": "."
+        }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "group": "serve"
+      }
+    }
+  ]
+}
