@@ -1,2 +1,7 @@
 .DS_Store
 assets/.DS_Store
+
+# Cloudflare Workers local artifacts
+cloudflare/download-worker/node_modules/
+cloudflare/download-worker/.wrangler/
+*.sqlite*

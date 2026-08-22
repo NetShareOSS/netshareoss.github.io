@@ -1,0 +1,14 @@
+{
+  "name": "netshare-dmg",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Progressive Turnstile gate in front of private R2 DMG downloads",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "secret:turnstile": "wrangler secret put TURNSTILE_SECRET_KEY"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

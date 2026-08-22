@@ -1,0 +1,26 @@
+# NetShare DMG download gate (R2 + Durable Object + Turnstile)
+
+name = "netshare-macos-dmg"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Public Turnstile site key (widget). Secret key goes in wrangler secret.
+[vars]
+TURNSTILE_SITE_KEY = "0x4AAAAAAEXHFNG6YiblybzT"
+FREE_LIMIT = "3"
+WINDOW_SECONDS = "3600"
+PASS_DOWNLOADS = "2"
+OBJECT_KEY = "releases/macos/NetShare.dmg"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "netshare-macos-dmg"
+
+# One DownloadGate instance per IP (`ip:` + CF-Connecting-IP; IPv6 keyed as /64).
+[[durable_objects.bindings]]
+name = "DOWNLOAD_GATE"
+class_name = "DownloadGate"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["DownloadGate"]

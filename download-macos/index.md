@@ -10,7 +10,7 @@ Get the notarized DMG for direct install, or install from the Mac App Store.
 
 ## Download
 
-- Download .dmg — URL is read from [`/assets/downloads/macos-dmg.url`](https://netfshare.site/assets/downloads/macos-dmg.url) (paste Cloudflare R2 URL there)
+- Download .dmg — URL is read from [`/assets/downloads/macos-dmg.url`](https://netfshare.site/assets/downloads/macos-dmg.url) (paste the Cloudflare Worker DMG URL there after deploy; not a public `r2.dev` link)
 - [Mac App Store](https://apps.apple.com/vn/app/id6758239332)
 
 ## How to install from the DMG
