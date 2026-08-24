@@ -67,6 +67,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const GTM_ID = 'GTM-KMLT6MF7';
     let loaded = false;
 
+    window.dataLayer = window.dataLayer || [];
+
+    const trackDownload = (target) => {
+        window.dataLayer.push({
+            event: 'download_click',
+            download_target: target
+        });
+    };
+
+    document.addEventListener('click', (event) => {
+        const el = event.target.closest('.macos-btn, .link-macos-dmg');
+        if (!el) return;
+
+        trackDownload(el.classList.contains('link-macos-dmg') ? 'macos_dmg' : 'macos_page');
+    }, true);
+
     const loadAnalytics = () => {
         if (loaded) return;
         loaded = true;
