@@ -18,6 +18,7 @@ Key facts:
 
 - [Home](https://netfshare.site/index.md): Product overview, features, use cases, and download entry points
 - [Download for macOS](https://netfshare.site/download-macos/index.md): Direct DMG download and Mac App Store
+- [Changelog](https://netfshare.site/changelog/): New features, improvements, and bug fixes by release ([Markdown](https://netfshare.site/changelog/changelog.md))
 - [Technology](https://netfshare.site/technology/index.md): Stack notes, including Flutter for cross-platform development
 
 ---
@@ -30,6 +31,10 @@ Netshare is designed for secure local network file sharing:
 - Privacy by design — data stays on your network; no uploads to Netshare servers for transfers
 - Works without internet — suitable for offices, labs, factories, and internal networks
 - Cross-platform — share between computers and mobile devices on Android, iOS, and macOS
+- End-to-end encryption — client-host traffic is tunneled through an X25519 + ChaCha20-Poly1305 channel; the QR code carries the host key fingerprint and manual connections are confirmed with a 6-digit code; older peers fall back to plain HTTP with a visible warning
+- Clipboard and text sharing — send text and links or sync the clipboard between devices
+- Resumable large-file transfers with progress, cancel, and retry
+- Quick connections — QR code, recent addresses, and PIN code protection
 
 ---
 

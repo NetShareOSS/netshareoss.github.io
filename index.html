@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netshare - Fast, Private, Local File Sharing</title>
     <meta name="description"
-        content="Netshare is a free, open-source app to securely share files between two computers or between a computer and mobile device over the same Wi-Fi, without relying on the internet.">
+        content="Netshare is a free, open-source app to securely share files between two computers or between a computer and mobile device over the same Wi-Fi, with end-to-end encryption and without relying on the internet.">
     <link rel="canonical" href="https://netfshare.site/">
     <link rel="alternate" type="text/plain" title="LLM context" href="https://netfshare.site/llms.txt">
     <link rel="alternate" type="text/plain" title="LLM full context" href="https://netfshare.site/llms-full.txt">
@@ -26,7 +26,9 @@
             <nav class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#use-cases">Use Cases</a>
+                <a href="#security">Security</a>
                 <a href="#technology">Technology</a>
+                <a href="changelog/">Changelog</a>
                 <a href="https://github.com/NetShareOSS/netshare" target="_blank">GitHub</a>
                 <a href="support/">Support</a>
             </nav>
@@ -53,6 +55,7 @@
                     <span class="hero-chip">Android</span>
                     <span class="hero-chip">iOS</span>
                     <span class="hero-chip">macOS</span>
+                    <span class="hero-chip">End-to-end encrypted</span>
                     <span class="hero-chip">No cloud</span>
                     <span class="hero-chip">Open source</span>
                 </div>
@@ -132,6 +135,54 @@
                         <h3>Cross-platform</h3>
                         <p>Share files between two computers or between a computer and a mobile device across Android,
                             iOS, and macOS on the same network.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔐</span>
+                        <h3>End-to-end encryption</h3>
+                        <p>Every transfer is encrypted between your devices, so nobody else on the Wi-Fi can read your
+                            files, even on shared or public networks.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📋</span>
+                        <h3>Clipboard &amp; text sharing</h3>
+                        <p>Send text and links, or sync your clipboard, between devices without opening a chat app or
+                            emailing yourself.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">⏯️</span>
+                        <h3>Resumable large files</h3>
+                        <p>Move large files with resumable downloads, upload progress, and cancel or retry when the
+                            network drops.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📷</span>
+                        <h3>Quick, protected connections</h3>
+                        <p>Connect by scanning a QR code, reuse recent addresses, and protect your host with a PIN
+                            code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security" class="technology-highlight-section">
+            <div class="container">
+                <div class="technology-highlight-card">
+                    <div class="technology-highlight-copy">
+                        <p class="technology-label">New · End-to-end encryption</p>
+                        <h2>Local network, now encrypted end to end.</h2>
+                        <p>All traffic between the client and the host is tunneled through an X25519 and
+                            ChaCha20-Poly1305 encrypted channel. Scanning the host's QR code verifies its key
+                            fingerprint, and manual connections are confirmed with a 6-digit code, so you know you are
+                            talking to the right device.</p>
+                        <p>If a peer is running an older version, Netshare falls back to plain HTTP and shows a clear
+                            warning, so you always know whether a connection is encrypted.</p>
+                        <div class="highlight-actions">
+                            <a href="changelog/#v2.5.6" class="btn btn-secondary">See what's new</a>
+                            <a href="changelog/" class="btn btn-secondary">Full changelog</a>
+                        </div>
+                    </div>
+                    <div class="technology-highlight-visual" aria-hidden="true">
+                        <span class="highlight-emoji">🔐</span>
                     </div>
                 </div>
             </div>
@@ -268,6 +319,7 @@
                         <li><a href="privacy/">Privacy Policy</a></li>
                         <li><a href="terms/">Terms of Use</a></li>
                         <li><a href="technology/">Technology</a></li>
+                        <li><a href="changelog/">Changelog</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">

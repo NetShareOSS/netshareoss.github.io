@@ -36,6 +36,22 @@ Share files without relying on the internet. Netshare works in offline or restri
 
 Share files between two computers or between a computer and a mobile device across Android, iOS, and macOS on the same network.
 
+### End-to-end encryption
+
+Every transfer is encrypted between your devices. All client-host traffic is tunneled through an X25519 + ChaCha20-Poly1305 channel. The QR code carries the host key fingerprint, and manual connections are confirmed with a 6-digit code. Older peers fall back to plain HTTP with a visible warning.
+
+### Clipboard & text sharing
+
+Send text and links, or sync your clipboard, between devices.
+
+### Resumable large files
+
+Resumable downloads, upload progress, and cancel or retry when the network drops.
+
+### Quick, protected connections
+
+Connect by scanning a QR code, reuse recent addresses, and protect your host with a PIN code.
+
 ## Large file transfers in action
 
 See NetShare move large files between an Android phone and a macOS desktop over the local network, with no cloud upload in between.
@@ -79,6 +95,7 @@ Move large builds and assets quickly between machines on the same LAN.
 Built with Flutter for a consistent cross-platform app. Flutter helped the team move quickly across platforms while keeping the UI consistent. It was chosen to enable fast development without maintaining separate native apps.
 
 - Read more: https://netfshare.site/technology/
+- Changelog: https://netfshare.site/changelog/
 
 ## Downloads
 
