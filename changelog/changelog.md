@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.5.6 - 2026-11-16
+## 2.6.0 - 2026-11-17
 
 End-to-end encryption for every transfer.
 
@@ -8,7 +8,7 @@ End-to-end encryption for every transfer.
 - New: Verify who you connect to: the QR code carries the host key fingerprint, and manual connections are confirmed with a 6-digit code.
 - New: Encryption status indicator, with a clear warning when a connection falls back to unencrypted HTTP for older peers.
 - New: Premium purchase to remove ads.
-- New: About section in Settings.
+- New: About section in Settings, with a link to this changelog.
 - Improved: Clipboard sharing now uses long-polling instead of polling every 1.5 seconds, for faster sync and less network noise.
 
 ## 2.5.1 - 2026-10-24
