@@ -52,6 +52,12 @@ Resumable downloads, upload progress, and cancel or retry when the network drops
 
 Connect by scanning a QR code, reuse recent addresses, and protect your host with a PIN code.
 
+## End-to-end encryption in action
+
+Watch NetShare verify the host by QR code or a 6-digit code, then send files through an encrypted channel that nobody else on the network can read.
+
+- End-to-end encryption demo: https://www.youtube.com/watch?v=TJWCt6tr-hQ
+
 ## Large file transfers in action
 
 See NetShare move large files between an Android phone and a macOS desktop over the local network, with no cloud upload in between.
