@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.6.1 - 2026-11-18
+
+Navigation, connection, and availability fixes.
+
+- Fixed: Swipe-back (iOS) and predictive-back (Android) gestures work again on every screen.
+- Improved: The premium paywall opens as a bottom sheet that you can swipe down to dismiss.
+- Fixed: Content is no longer drawn underneath the Android system navigation bar.
+- Fixed: The connect screen now prefills the subnet from your device's LAN IP, and ignores VPN, cellular, and Wi-Fi Direct addresses.
+- Fixed: Netshare is now available on Google Play for devices without Wi-Fi hardware.
+
 ## 2.6.0 - 2026-11-17
 
 End-to-end encryption for every transfer.
