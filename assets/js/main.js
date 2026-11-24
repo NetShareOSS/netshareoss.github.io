@@ -17,6 +17,43 @@ const resolveMacosDmgUrl = (raw) => {
     return `${line.replace(/\/?$/, '/')}NetShare.dmg`;
 };
 
+const DOWNLOAD_BANNER_DISMISS_KEY = 'netshare-download-banner-dismissed';
+
+const initDownloadBanner = () => {
+    const banner = document.querySelector('.download-banner');
+    const heroActions = document.querySelector('.hero-actions');
+    if (!banner || !heroActions) return;
+
+    try {
+        if (sessionStorage.getItem(DOWNLOAD_BANNER_DISMISS_KEY) === '1') return;
+    } catch {}
+
+    const { body } = document;
+    const setVisible = (visible) => {
+        banner.classList.toggle('is-visible', visible);
+        body.classList.toggle('has-download-banner', visible);
+    };
+
+    const resizeObserver = new ResizeObserver(() => {
+        body.style.setProperty('--download-banner-height', `${banner.offsetHeight}px`);
+    });
+    resizeObserver.observe(banner);
+
+    const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+    const update = () => setVisible(heroActions.getBoundingClientRect().bottom < headerHeight);
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+
+    banner.querySelector('.download-banner-close').addEventListener('click', () => {
+        window.removeEventListener('scroll', update);
+        resizeObserver.disconnect();
+        setVisible(false);
+        try {
+            sessionStorage.setItem(DOWNLOAD_BANNER_DISMISS_KEY, '1');
+        } catch {}
+    });
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const updateLinks = (platform, url) => {
         document.querySelectorAll(`.link-${platform}`).forEach((el) => {
@@ -36,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (dmgUrl) updateLinks('macos-dmg', dmgUrl);
         })
         .catch(() => {});
+
+    initDownloadBanner();
 
     document.querySelectorAll('[data-youtube-id]').forEach((el) => {
         const loadPlayer = () => {

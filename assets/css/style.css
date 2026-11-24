@@ -763,6 +763,147 @@ footer {
     font-size: 0.875rem;
 }
 
+/* Download Banner */
+.download-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: min(calc(100% - 32px), 720px);
+    margin: 0 auto;
+    padding: 0.75rem 0.75rem 0.75rem 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    background: color-mix(in srgb, var(--card-bg) 88%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-sm), 0 18px 40px -16px rgba(0, 20, 60, 0.28);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(calc(100% + 32px));
+    transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.3, 1), opacity 0.25s ease, visibility 0s linear 0.35s;
+}
+
+.download-banner.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 0s;
+}
+
+.has-download-banner footer {
+    padding-bottom: calc(3.5rem + var(--download-banner-height, 0px) + 16px + env(safe-area-inset-bottom));
+}
+
+.download-banner-icon img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 22%;
+    object-fit: cover;
+}
+
+.download-banner-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    line-height: 1.35;
+}
+
+.download-banner-text strong {
+    color: var(--text-primary);
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.download-banner-text span {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.download-banner-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.download-banner .store-badge img {
+    height: 44px;
+}
+
+.download-banner-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 1.375rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.download-banner-close:hover {
+    background: var(--accent-soft);
+    color: var(--text-primary);
+}
+
+.download-banner-close:focus-visible,
+.download-banner .store-badge:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+    .download-banner {
+        bottom: 0;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        width: 100%;
+        padding: 0.875rem 16px calc(0.875rem + env(safe-area-inset-bottom));
+        border-width: 1px 0 0;
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        transform: translateY(100%);
+    }
+
+    .has-download-banner footer {
+        padding-bottom: calc(3.5rem + var(--download-banner-height, 0px));
+    }
+
+    .download-banner-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .download-banner-actions {
+        order: 1;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .download-banner .store-badge img {
+        height: 42px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .download-banner {
+        transform: none;
+        transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+    }
+}
+
 /* Policy Pages */
 .policy-page {
     padding-top: calc(var(--header-height) + 3rem);
